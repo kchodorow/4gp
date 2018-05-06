@@ -11,6 +11,7 @@
     "matches": ["https://www.gencon.com/*"],
     "js": ["content.js"]
   }],
+  "icons": {"128": "icons/icon128.png"},
   "manifest_version": 2,
   "permissions": [
     "tabs",
