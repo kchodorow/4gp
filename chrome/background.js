@@ -1,7 +1,7 @@
 const urlRegex = /https:\/\/www\.gencon\.com\/events\/[0-9]+/;
 
 const sendToPlanner = (response) => {
-  const plannerUrl = `http://www.genconplanner.com/2018/event/${response.gameId}`;
+  const plannerUrl = `http://www.genconplanner.com/event/${response.gameId}`;
   chrome.tabs.update(response.tabId, { url: plannerUrl });
 }
 
