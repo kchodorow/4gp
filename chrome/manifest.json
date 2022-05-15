@@ -1,6 +1,6 @@
 {
   "name": "Genconnator",
-  "version": "1.02",
+  "version": "1.03",
   "description": "Click on the button to see the event on genconplanner.com.",
   "background": {
     "scripts": ["background.js"],

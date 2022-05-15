@@ -1,6 +1,5 @@
 function checkAll() {
-  const username_and_id = document.getElementsByClassName('username')[0].innerText;
-  const user_id = username_and_id.match(/\w+(?: \w+)* \((\d+)\)/)[1];
+  const user_id = document.evaluate("//div[@user-id]", document, null, XPathResult.ANY_TYPE, null).iterateNext().getAttribute('user-id');
   var box = document.getElementById('tickets_for_' + user_id);
   box.checked = true;
   for (var i = 1; i < 10; ++i) {
